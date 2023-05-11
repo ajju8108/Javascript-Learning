@@ -1,23 +1,20 @@
-const circle = {
-    radius: 1,
-    location: {
-        x: 1,
-        y: 2
-    },
-    isVisible: true,
-    draw: function () {  //method
-        console.log('draw');
-    }
-};
 
-const circle2 = {
-    radius: 1,
-    location: {
-        x: 1,
-        y: 2
-    },
-    isVisible: true,
-    draw: function () {  //method
-        console.log('draw');
-    }
-};
+
+// Factory function
+function createCircle(radius) {
+    return {
+        // radius: radius,
+        radius,
+        draw() {
+            console.log('draw');
+        }
+        // draw: function () {  
+        //     console.log('draw');
+        // }
+    };
+}
+const circle = createCircle(1)
+console.log(circle);
+
+const circle2 = createCircle(2)
+console.log(circle2);
