@@ -1,6 +1,8 @@
 
-
+// Naming Convention
+// Camel Notation : oneTwoThreeFour
 // Factory function
+// For factory Function we will use Camel Notation
 function createCircle(radius) {
     return {
         // radius: radius,
