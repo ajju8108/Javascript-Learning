@@ -23,7 +23,7 @@ for (let entries of Object.entries(circle)) {
 }
 
 
-//checking for the keys availabe in an object
+//checking for the keys availabe in an object3
 if ('radius' in circle) {
     console.log('yes');
 }
